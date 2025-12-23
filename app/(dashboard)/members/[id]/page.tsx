@@ -18,7 +18,8 @@ import {
   MessageSquare,
   MoreVertical,
   CheckCircle2,
-  ChevronRight
+  ChevronRight,
+  X
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"

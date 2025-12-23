@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 import { 
   FileSpreadsheet, 
   Upload, 
@@ -31,6 +32,7 @@ const DB_FIELDS = [
 ]
 
 export default function BulkImportPage() {
+  const router = useRouter()
   const [currentStep, setCurrentStep] = useState(1)
   const [isUploading, setIsUploading] = useState(false)
   const [importResults, setImportResults] = useState<{ success: number; fail: number; errors: any[] } | null>(null)
